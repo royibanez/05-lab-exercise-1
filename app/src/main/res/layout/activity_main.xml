@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Academic_Program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:hint="Academic Program"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <Spinner
+        android:id="@+id/abm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:hint="ABM"
+        />
+
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Academic_Program"
+        android:hint="Last Name"
+        android:padding="11dp" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_name"
+        android:hint="First Name"
+        android:padding="11dp" />
+
+
+    <EditText
+        android:id="@+id/middle_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_name"
+        android:hint="Middle Name"
+        android:padding="11dp" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Academic_Program"
+        android:layout_below="@+id/middle_name"
+        android:hint="Gender"
+        android:textSize="18sp"
+        android:padding="5dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lay>
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/Gender"
+        android:text="Male"
+        />
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gender"
+        android:layout_marginStart="133dp"
+        android:text="Female" />
+
+    <TextView
+        android:id="@+id/Requirements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Academic_Program"
+        android:layout_below="@+id/female"
+        android:hint="Requirements"
+        android:textSize="18sp"
+        android:padding="5dp" />
+
+    <CheckBox
+        android:id="@+id/Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Requirements"
+        android:text="Original Report Card(Form 138)"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/NSO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Form"
+        android:text="NSO copy of Birth Certificate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/Certificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NSO"
+        android:text="Certificate of Good Moral Character"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/Junior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Certificate"
+        android:text="Certificate of Junior High School Completion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Junior"
+        android:layout_marginStart="150dp"
+        android:hint="Submit"/>
+
+
+
+
+
+</RelativeLayout>
+
